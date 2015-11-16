@@ -144,6 +144,10 @@ void insertPriceMenu(Tree tree, Element element, char szParentId[]);
 QuoteResult determineQuote(Tree tree, QuoteSelection quoteSelection);
 void deleteItem(Tree tree, char szId[]);
 
+// Helper Node Functions
+NodeT *insertT(NodeT **pp, QuoteSelection quote, Element element);
+NodeT allocateNodeT(QuoteSelection quote, Element element);
+
 // Driver function to process a input data line.  Groups must write this function
 void processCommand(Tree tree, QuoteSelection quote, char szInputBuffer[]);
 
